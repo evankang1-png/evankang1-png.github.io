@@ -1,534 +1,205 @@
 <!DOCTYPE html>
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&display=swap" rel="stylesheet">
-    <style>
-    body {
-     font-family: "Libertinus Keyboard", system-ui;
-     font-weight: 400;
-     font-style: normal;
-}
-</style>
+<html lang="en"><head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <meta name="description" content="Personal Portfolio of Evan"/>
+ <title>Evan - Portfolio</title>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+
+ <style>
+   /* Reset & Font */
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   body {
+     font-family: 'Inter', sans-serif;
+     line-height: 1.6;
+     background-color: #f4f4f4;
+     color: #333;
+   }
+
+
+   /* General Centering */
+   .center-section {
+     text-align: center;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 60px 20px;
+   }
+   .center-horizontal {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+   }
+
+
+   /* Navbar */
+   .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #222;
+     padding: 20px 0;
+     color: #fff;
+   }
+   .logo {
+     font-size: 1.5rem;
+     font-weight: bold;
+   }
+   .nav-links {
+     list-style: none;
+     display: flex;
+     gap: 20px;
+   }
+   .nav-links a {
+     color: #fff;
+     text-decoration: none;
+     font-weight: 600;
+   }
+   .nav-links a:hover {
+     color: #ffcc00;
+   }
+
+
+   /* Buttons */
+   .btn {
+     display: inline-block;
+     margin-top: 20px;
+     padding: 10px 25px;
+     background-color: #222;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 5px;
+     font-weight: bold;
+   }
+   .btn:hover {
+     background-color: #444;
+   }
+
+
+   /* Images */
+   .profile-pic {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     object-fit: cover;
+     margin-bottom: 20px;
+   }
+   .project-image {
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+     margin-bottom: 15px;
+   }
+
+
+   /* Project Grid */
+   .project-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+     gap: 30px;
+     margin-top: 40px;
+   }
+   .project {
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+     text-align: center;
+   }
+   .project h3 {
+     margin: 15px 0 10px;
+   }
+   .project p {
+     font-size: 0.95rem;
+     color: #555;
+   }
+   .project a {
+     display: inline-block;
+     margin-top: 10px;
+     color: #007BFF;
+     text-decoration: none;
+     font-weight: bold;
+   }
+   .project a:hover {
+     text-decoration: underline;
+   }
+
+
+   /* Footer */
+   footer {
+     margin-top: 40px;
+     font-size: 0.9rem;
+     color: #777;
+   }
+ </style>
 </head>
+
 <body>
-    
-    <div id="leftside" style="float:left">
-        <img src="picture1.webp" alt="" height="400px">
-    </div>
+    <header>
+        <nav class="navbar center-horizontal">
+            <div class="logo">Evan</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contract">Contract</a></li>
 
-    <div id="toprightside" style="float:left">
-        <strong> Ingredients</strong>
-        <br>
-        <strong> Speciality Lattes</strong>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero" class="center-section">
+      <img src="my anime expo.jpg" alt="Your Profile Picture" class="profile-pic"/> 
+      <h1> Hi, I'm Evan</h1> 
+      <p> Barista/Designer</p>
+      <a href="#project" class="btn"> See My Work</a>
+    </section>
 
-        <p>
-            Fresh, organic Ingredients
-            <br>
-            Made from Scratch
-        </p>
+    <section id="about" class="center-section">
+        <h2> About me </h2>
+        <p> I'm barista who enjoys espresso and making new drinks. My favorite place is Disneyland
+         </p>
+    </section> 
 
-        <p>
-            We use real organic Madagascar Vanilla
-            <br>
-            beans and whip our homemade cream
-            <br>
-            fresh throughout the day
-        </p>
-        <strong>Matcha</strong>
+    <section id="project" class="center-section">
+        <h2> Disney pins</h2>
 
-        <p>
-            Ceremonial-grade matcha from Yame
-            <br>
-            Japan
-        </p>
-        <strong> Teas</strong>
+        <div class="project-grid">
 
-        <p>
-            Curating finest teas from
-           <br>
-           France and Korea
-        </p>
+                <div class="project">
+                <img src="Its-a-Small-World-Disney-Character-2023-Mystery-Pins.jpeg" alt="Project 1" class="project-image"/>
+                <h3> Disney Small World</h3>
+                <p> This is my favorite Disney Pins</p>
+                <a href="#"> View Project</a>
+            </div>
 
-        <p>
-            Every Ingredient reflects
-            <br>
-            our commitment to excellence
-        </p>
-    </div>
+                  <div class="project">
+                <img src="push.jpeg" alt="Project 1" class="project-image"/>
+                <h3> Disney Plush</h3>
+                <p> This is my favorite plush</p>
+                <a href="#"> View Project</a>
+            </div> 
 
-    <br style="clear:both"/>
-
-    <div id="bottomleftside"style="float:left">
-        <p>
-            new
-        </p>
-        <br>
-        <strong>
-                Expanding Parking
-        </strong>
-        <p>
-            We now offer two parking lots:
-            <br>
-            Lot 1
-        </p>
-        <p>
-            Seesaw Lot- right beside cafe
-            <br>
-            Lot 2
-            <br>
-            Nolza Lot- Across the alley at Nolza (8am-4pm)
-        </p>
-
-    </div>
-
-    <div id="rightside" style="float:left">
-        <img src="Seesaw_Parking_3.webp" alt="" height="400px">
+                <div class="project">
+                <img src="mickey sunflower.jpg" alt="Project 1" class="project-image"/>
+                <h3> Disney Plants</h3>
+                <p> This is my favorite plants </p>
+                <a href="#"> View Project</a>
+            </div> 
         </div>
+    </section>
 
-    <br style="clear:both"/>
-
-    <div id="patiorightside" style="float:right">
-        <strong>
-            Patio Now Open!
-        </strong>
-        <p>
-            More sunshine, more seats, more Seesaw! We've
-            <br>
-            expanded our outdoor space. Come enjoy the breeze,
-            <br>
-            the beans, and the company, just across from our cafe.
-        </p>
-
-    </div>
-
-    <div id="leftside" style="float:left">
-        <img src="patio.webp" alt="" height="400px">
-    </div>
-
-    <br style="clear:both"/>
-    <div id="cafeleftside " style="float:left">
-        <strong>
-            Cafe with Purpose
-        </strong>
-        <p>
-            A one of a kind cafe
-            <br>
-            where every cup
-            <br>
-            brews joy and purpose
-        </p>
-
-        <p>
-            Our staff includes adults with developmental
-            <br>
-            disabilities
-        </p>
-    <br style="clear:both"/>
-
-    </div>
-
-    <div id="rightside" style="float:right">
-        <img src="SeesawIllustration__0005_Evan.webp" alt="" height="400px">
-    </div>
-
-    <div id="roastrightside" style="float:right">
-        <strong>
-            In House Roasting
-        </strong>
-        <p>
-            Everyday by True Master Artisans
-            <br>
-            30+ years of studying and sourcing the best speciality
-            <br>
-            beans
-            <br>
-            Precision, Passion, Purpose
-        </p>
-    </div>
-
-    <div id="leftside" style="float:left">
-        <img src="SeesawIllustration__0003_Roast-Machine.webp" alt="" height="400px">
-    </div>
-    <br style="clear:both"/>
-
-    <div id="coffeeleftside" style="float:left">
-        <strong>
-            Specialty Coffee Beans
-        </strong>
-        <p>
-            From the world's most vibrant regions
-            <br>
-            Excusively sourced with care.
-            <br>
-            Graded for excellence. 80+ point Specialty Beans
-            <br>
-            Experience the exceptional flavor,
-            <br>
-            quality, and care in every cup
-        </p>
-
-    </div>
-
-    <div id="rightside" style="float:right">
-        <img src="SeesawIllustration__0002_Specialty-Coffee-Map.webp" alt="" height="400px">
-    </div>
-    <br style="clear:both"/>
-
-    <div id="beansrightside" style="float:right">
-        <strong>
-            Seesaw Beans + Coffee
-        </strong>
-        <p>
-            Hours
-        </p>
-        <br>
-        Mon-Fri 8am-4pm
-        <br>
-        Sat-Sun 9am-5pm
-        <br>
-        6302 Beach Blvd, Buena Park, CA 90621
-        <br>
-        (714)798-3366
-    </div>
-
-    <div id="leftside" style="float:left">
-        <img src="SeesawIllustration__0000_cafe-Open.webp" alt="" height="400px">
-    </div>
-
-    <br style="clear:both"/>
-
-    <div id="endleftside" style="float:left">
-        <p>
-            At the playground
-            <br>
-            I couldn't Seesaw alone.
-            <br>
-            What a joy it is
-            <br>
-            to simply be here with you
-            <br>
-            Through all the ups & downs of life,
-            <br>
-            Let's Seesaw Together
-        </p>
-    </div>
-
-    <div id="rightside" style="float:right">
-        <img src="seesaw_0b2a8899-e269-44bb-b933-9a048e028840.webp" alt="" height="400px">
-    </div>
-
-    <br style="clear:both"/>
-
-     <div id="communitiesleftside" style="float:left">
-     <strong>
-        Mission
-     </strong>
-     <p>
-        Seesaw Communities is dedicated to empowering individuals
-        <br>
-        with developmental disabilities by providing vocational
-        <br>
-        training, employment opportunities, and a sense of
-        <br>
-        community. Our mission is to foster independence, self-
-        <br>
-        esteem, and a better quality of life for individuals with
-        <br>
-        developmental disabilities by equipping them with the skills
-        <br>
-        and resources needed to thrive in today's workforce.
-        </p>
-    </div>
-
-    <br style="clear:both"/> 
-
-
-    <div id="middleleftside" style="float:left">
-        <strong>
-           Vision 
-        </strong>
-        <p>
-            We envision a world where individuals with developmental
-            <br>
-            disabilities are fully integrated into society, not just as workers
-            <br>
-            but as valued members of their communities. Seesaw
-            <br>
-            Communities seeks to break down barriers, raise awareness,
-            <br>
-            and create sustainable opportunities that allow everyone to
-            <br>
-            contribute their unique talents and strengths to the world.
-        </p>
-    </div>
-
- <br style="clear:both"/> 
-
- <div id="yearleftside" style="float:left">
-    <strong>
-        History
-    </strong>
-    <p>
-        2021
-        <br>
-        Seesaw Communities was founded during the COVID-19
-        <br>
-        pandemic with the belief that adults with developmental
-        <br>
-        disabilites, like the peers, should have the opportunity to
-        <br>
-        engage in meaningful work and contribute to society. In May
-        <br>
-        2021, Seesaw Communities launched its Coffee Education
-        <br>
-        program, provding hands-on trainging to help participants
-        <br>
-        develop job-ready skills.
-    </p>
-
-    <p>
-        2022
-        <br>
-        Seesaw introduced its Graphic Art program, empowering
-        <br>
-        participants to devlop digital and creative skills. The program
-        <br>
-        aims to help them design and create their own products, offering
-        <br>
-        job opportunites by selling on platforms like Etsy. The Espresso
-        <br>
-        Cart program was launched to raise community awareness
-        <br>
-        about individuals with developmental disabilities while providing
-        <br>
-        them with real-world job experience through events like
-        <br>
-        corporate functions and golf tournaments. Seesaw held 27
-        <br>
-        Espresso Cart events in 2022.
-    </p>
-
-    <p>
-       2023
-       <br>
-       Seesaw's Espresso Cart program expanded, with 57 events held
-       <br>
-       across corporate functions, golf tournaments, and community
-       <br>
-       gatherings. In August 2023, Seesaw Beans and Coffee was
-       <br>
-       opened in Buena Park, facing the difficulty of finding
-       <br>
-       employment for individuals with developmental disabilities in
-       <br>
-       regular stores. All students who completed Seesaw's training
-       <br>
-       were hired as staff. 
-    </p>
-
-    <p>
-        2024
-        <br>
-        In February 2024, Seesaw launched the Walnut Coffee Training
-        <br>
-        Center in the East LA area, providing individuals with
-        <br>
-        developmental disabilities not only weekly practice in a real-
-        <br>
-        world cafe setting but also valuable training opportunities. Also
-        <br>
-        in Feburary 2024, a former Seesaw Beans and Coffee staff 
-        <br>
-        member, along with their parents, opened an on-site cafe at
-        <br>
-        San Gabriel Pomona Regional Center, making their transition to
-        <br>
-        independent business ownership. In August 2024,
-        <br>
-        Seesaw introduced a Baking Program to complement its coffee training,
-        <br>
-        recognizing the importance of bakery skills in running a
-        <br>
-        sucessful cafe. To support our growing barista traing program,
-        <br>
-        we plan to open 2nd and 3rd locations, which will also
-        <br>
-        include bakery services. These new spaces will provide more
-        <br>
-        hands-on training opportunities, helping trainees devlop both
-        <br>
-        coffee-making and baking skills. This expansion will further
-        <br>
-        strengthen our mission to enpower individuals with
-        <br>
-        developmental disabilites by providing a supportive
-        <br>
-        environment for vocational training and community engagement.
-    </p> 
-
- </div>
-
- <br style="clear:both"/>
-
- <div id="baristaleftside" style="float:left">
-    <strong>
-        Barista Training
-    </strong>
-    <p>
-        Master the art of coffee making, including
-        <br>
-        brewing techniques, espresso-based drinks,
-        <br>
-        and customer service skills. Participants will
-        <br>
-        also learn how to operate coffee machines,
-        <br>
-        manage inventory, and maintain a clean,
-        <br>
-        welcoming environment in a cafe setting.
-    </p>
- </div>
- <br style="clear:both"/>
-
- <div id="designleftside" style="float:left">
-    <strong>
-        Graphic Design
-    </strong>
-    <p>
-        Explore the fundementals of design using
-        <br>
-        software like Adobe Photoshop and Illustrator.
-        <br>
-        Participants will create projects such as logos,
-        <br>
-        posters, and merchandise(e.g., calendars and t-shirts),
-        <br>
-        learning about layout, typography, and
-        <br>
-        color theory along the way.
-    </p>
- </div>
- <br style="clear:both"/>
-
- <div id="communitesleftside" style="float:left">
-    <strong>
-        Seesaw Communities
-    </strong>
-    <p>
-       Seesaw Communities is a non-profit organization dedicated to adults with developmental disabilites.
-       <br>
-       The name 'seesaw'  is inspired by the playground
-       <br>
-       equipment that requires at least two riders to function, symbolizing the balance and cooperation needed between individuals.
-       <br>
-       This reflects the organization's vision of creating inclusive spaces where people with
-       <br>
-       and without disabilites can interact and enjoy activities together,
-       <br>
-       fostering a sense of community and mutual support.
-    </p>
- </div>
- <br style="clear:both"/>
-
- <div id="moneyleftside" style="float:left">
-    <strong>
-        Personal Finance Management
-    </strong>
-    <p>
-        Budgeting, managing bank accounts,
-        <br>
-        paying bills, and responsible spending.
-    </p>
- </div>
-<div id="rightside" style="float:right">
-    <img src="Personal-Finance-Management.jpg" alt="" height="400px">
-</div>
-<br style="clear:both"/>
-
-<div id="skillsleftside" style="float:left">
-    <strong>
-     Social Skills and Communication   
-    </strong>
-    <p>
-        Building relationships, workplace behavior,
-        <br>
-        and self-adovacy.
-    </p>
-</div>
-<div id="rightside" style="float:right">
-    <img src="Social-Skills-and-Communication.jpg" alt="" height="400px">
-</div>
-<br style="clear:both"/>
-
-<div id="jobleftside" style="float:left">
-    <strong>
-        Employment Readiness
-    </strong>
-    <p>
-        Time management, job applications,and workplace etiquette.
-    </p>
-</div>
-<div id="rightside" style="float:right">
-    <img src="Employment-Readiness.jpg" alt="" height="400px">
-</div>
-<br style="clear:both"/>
-
-<div id="selfleftside" style="float:left">
-    <strong>
-        Self-Advocacy
-    </strong>
-    <p>
-        Understanding your rights, acessing community resources,
-        <br>
-        and making informed decisions.
-    </p>
-</div>
-<div id="rightside" style="float:right">
-    <img src="Self-Advocacy.jpg" alt=""height="400px">
-</div>
-<br style="clear:both"/>
-
-<div id="techleftside" style="float:left">
-    <strong>
-        Technology Use
-    </strong>
-    <p>
-        Participants will learn how to leverage
-        <br>
-        AI technology, such as ChatGPT,
-        <br>
-        to gain knowledge and produce
-        <br>
-        desired outcomes, empowering them
-        <br>
-        to solve problems and acess
-        <br>
-        a wide range of information
-    </p>
-</div>
-<div id="rightside" style="float:right">
-    <img src="Technology-Use.jpg" alt=""height="400px">
-</div>
-<br style="clear:both"/>
-
-<div id="healthleftside" style="float:left">
-    <strong>
-        Health Management
-    </strong>
-    <p>
-        Health management is essential for
-        <br>
-        individuals with Austism Spectrum Disorder (ASD)
-        <br>
-        as they often require additonal support to maintain
-        <br>
-        and improve physical, emotional, and
-        <br>
-        soical well-being.
-    </p>
-</div>
-<div id="rightside" style="float:right">
-    <img src="Health-Management.jpg" alt=""height="400px">
-</div>
+    <section id="contact" class="center-section">
+        <h2>Contact</h2>
+        <p> This is my project and my social media.</p>
+        <ul>
+            <li> Email: <a href="mailto:evankang1@gmail.com">evankang1@gmail.com</a></li>
+            <li> Github: <a href="https://github.com/evankang1-png">github.com/evankang1-png</a></li>
+            <li> Video: <a href="https://www.youtube.com/watch?v=3nMOUzBZ0ZI"> My favorite Music Video</a></li>
+        </ul>
+    </section>
 </body>
+
+</html>
